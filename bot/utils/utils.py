@@ -9,7 +9,7 @@ import asyncio
 import datetime
 import traceback
 
-from pyrogram import InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait
 
 from ..config import Config
@@ -62,7 +62,7 @@ def pack_id(msg):
     msg_id_offset = pack_bits + chat_id_offset
     
     file_id |= msg.chat.id << chat_id_offset
-    file_id |= msg.message_id << msg_id_offset
+    file_id |= msg.id << msg_id_offset
     return file_id
 
 

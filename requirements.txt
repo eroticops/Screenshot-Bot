@@ -1,5 +1,5 @@
-https://github.com/pyrogram/pyrogram/archive/asyncio.zip
-https://github.com/Tinche/aiofiles/archive/master.zip
+pyrogram
+aiofiles
 tgcrypto
 motor
 dnspython
